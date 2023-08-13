@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Audio Reader</title>
+    <link href="/static/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <h1>Text to Audio Converter</h1>
+    <center>
+    <div class="main-app">
+      <div class="user-input">
+        <form method="post">
+          <span class="label">Enter your text: </span><br />
+          <input
+            type="text"
+            name="user_msg"
+            autocomplete="off"
+            autofocus="autofocus"
+          />
+        </form>
+      </div>
+      <div class="audio">
+        <center>
+          <audio controls>
+            <source src="/static/audio_output.mp3" type="audio/mp3" />
+          </audio>
+        </center>
+      </div>
+    </center>
+    </div>
+  </body>
+</html>
